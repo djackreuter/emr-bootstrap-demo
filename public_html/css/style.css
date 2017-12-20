@@ -33,3 +33,15 @@ body {
   background-size: cover;
   min-height: 50vh;
 }
+
+.working-image {
+  margin-top: 4rem;
+  width: 90%;
+  opacity: 0.9;
+  border-radius: 3%;
+}
+
+.carousel {
+  width: 46rem;
+  height: 46rem;
+}
