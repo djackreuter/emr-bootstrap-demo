@@ -9,14 +9,14 @@ body {
   height: 100vh;
 }
 
-.card {
+.my-card {
   background-color: lightgray;
   opacity: 0.5;
   margin: 4rem 0;
   padding: 1rem;
 }
 
-.card > h1, p {
+.my-card > h1, p {
   color: black;
 }
 
@@ -55,5 +55,21 @@ body {
 
 .portfolio {
   margin: 4rem 0 2rem 0;
+  color: black;
+}
+
+#accordion {
+  margin-top: 4rem;
+  opacity: 0.9;
+}
+
+.card-header {
+  background-color: lightgray;
+
+}
+
+.card-body {
+  background-color: lightgray;
+  opacity: 0.8;
   color: black;
 }
