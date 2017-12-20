@@ -73,3 +73,17 @@ body {
   opacity: 0.8;
   color: black;
 }
+
+.computer-img {
+  background: url('../images/computer.jpg') no-repeat center;
+  background-size: cover;
+  min-height: 50vh;
+  opacity: 0.5;
+}
+
+.text-content {
+  position: relative;
+  font-size: 3.5rem;
+  color: black;
+  top: 4rem;
+}
