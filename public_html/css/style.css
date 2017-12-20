@@ -3,7 +3,7 @@ body {
 }
 
 .background {
-  background: url('../images/splash.png') no-repeat top center;
+  background: url('../images/splash.png') no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;
@@ -12,7 +12,7 @@ body {
 .card {
   background-color: lightgray;
   opacity: 0.5;
-  margin-top: 4rem;
+  margin: 4rem 0;
   padding: 1rem;
 }
 
@@ -25,4 +25,11 @@ body {
   margin-left: 3rem;
   width: 90%;
   opacity: 0.8;
+}
+
+.code-img {
+  background: url('../images/code-pic.png') no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 50vh;
 }
