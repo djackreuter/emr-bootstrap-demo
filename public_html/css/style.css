@@ -1,3 +1,23 @@
+/* sticky footer */
+/***
+* Flexbox Sticky Footer
+* http://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
+***/
+
+/*corrects IE min-height bug*/
+html { display: flex;}
+body { width: 100%;}
+
+.sfooter {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.sfooter-content {
+	flex: 1 0 auto;
+}
+
 body {
   background-color: #2C5D7B;
   position: relative;
@@ -169,5 +189,24 @@ hr {
 #map {
   height: 20rem;
   box-shadow: 0 0 3rem #111;
+  margin-bottom: 4rem;
+}
 
+footer {
+  /* min-height: 2rem; */
+  background-color: #343A40;
+  min-height: 3rem;
+
+}
+
+.copyright p {
+  color: #9A9DA0;
+  padding-top: 2.5rem;
+
+}
+
+.links {
+  font-size: 3rem;
+  text-align: right;
+  padding: 0 3rem;
 }

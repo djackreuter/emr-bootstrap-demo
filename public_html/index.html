@@ -13,321 +13,340 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9uOLTUZsO2MBjusVzMcnMufTjy83fVa0&callback=initMap">
   </script>
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
   <script src="js/script.js"></script>
   <title>Bootstrap Demo</title>
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" id="navbar">
-    <a class="navbar-brand" id="title" href="#">Acme Software</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<body class="sfooter">
+  <div class="sfooter-content">
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" id="navbar">
+      <a class="navbar-brand" id="title" href="#">Acme Software</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="nav nav-pills navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#home">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#how-we-help">Graphic Design</a>
-            <a class="dropdown-item" href="#how-we-help">Web Development</a>
-            <a class="dropdown-item" href="#how-we-help">Mobile Application Development</a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav nav-pills navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#how-we-help">Graphic Design</a>
+              <a class="dropdown-item" href="#how-we-help">Web Development</a>
+              <a class="dropdown-item" href="#how-we-help">Mobile Application Development</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- <div class="background"> -->
+    <div class="container">
+      <div class="row justify-content-center" id="home">
+        <video id="video" src="images/laptop.mp4" autoplay loop></video>
+        <div class="col-lg-10 overlay">
+          <div class="card my-card my-card-title">
+            <h1>Welcome To Acme Software</h1>
+            <p>
+              Lorem ipsum dolor amet tbh art party small batch stumptown bitters intelligentsia tumblr, lomo kogi godard keytar fam vegan succulents. Adaptogen kogi blue bottle ramps cray cardigan subway tile forage plaid taiyaki vape viral pok pok seitan cronut. Etsy
+              lo-fi bitters health goth meditation. Retro kombucha brooklyn whatever brunch chartreuse PBR&amp;B cold-pressed wayfarers YOLO. Meh single-origin coffee man bun aesthetic wolf sriracha banjo forage celiac pinterest plaid blog man braid freegan
+              master cleanse. Gluten-free vaporware aesthetic try-hard.
+            </p>
           </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <!-- <video id="video" src="images/laptop.mp4" autoplay loop></video> -->
-
-  <div class="video">
-  </div>
-  <!-- <div class="background"> -->
-  <div class="container">
-    <div class="row justify-content-center" id="home">
-      <video id="video" src="images/laptop.mp4" autoplay loop></video>
-      <div class="col-lg-10 overlay">
-        <div class="card my-card my-card-title">
-          <h1>Welcome To Acme Software</h1>
-          <p>
-            Lorem ipsum dolor amet tbh art party small batch stumptown bitters intelligentsia tumblr, lomo kogi godard keytar fam vegan succulents. Adaptogen kogi blue bottle ramps cray cardigan subway tile forage plaid taiyaki vape viral pok pok seitan cronut. Etsy
-            lo-fi bitters health goth meditation. Retro kombucha brooklyn whatever brunch chartreuse PBR&amp;B cold-pressed wayfarers YOLO. Meh single-origin coffee man bun aesthetic wolf sriracha banjo forage celiac pinterest plaid blog man braid freegan
-            master cleanse. Gluten-free vaporware aesthetic try-hard.
-          </p>
+          <!-- /.card -->
         </div>
-        <!-- /.card -->
+        <!-- /.col-lg-10 -->
       </div>
-      <!-- /.col-lg-10 -->
+      <!-- /.row -->
     </div>
-    <!-- /.row -->
-  </div>
-  <!-- /.container -->
-  </div>
-  <!-- /.background -->
+    <!-- /.container -->
 
-  <div class="container">
-    <!-- About Section -->
-    <div id="about" class="row">
-      <div class="col">
-        <div class="card my-card shadow-left">
-          <h1>About Us</h1>
-          <p>
-            Waistcoat la croix banh mi yuccie drinking vinegar ennui gastropub synth typewriter normcore squid man braid letterpress mlkshk. Before they sold out paleo photo booth fixie next level, subway tile tumeric vaporware fingerstache keytar activated charcoal
-            venmo. Direct trade cardigan bitters flexitarian helvetica. Forage drinking vinegar gastropub cold-pressed hoodie, hell of schlitz four loko vaporware fixie flexitarian mlkshk. Woke biodiesel godard activated charcoal franzen four dollar toast
-            fixie. Chicharrones vexillologist hammock vaporware fixie pinterest, butcher VHS farm-to-table YOLO ramps bespoke. Man bun food truck unicorn typewriter.
-          </p>
+    <div class="container">
+      <!-- About Section -->
+      <div id="about" class="row">
+        <div class="col">
+          <div class="card my-card shadow-left">
+            <h1>About Us</h1>
+            <p>
+              Waistcoat la croix banh mi yuccie drinking vinegar ennui gastropub synth typewriter normcore squid man braid letterpress mlkshk. Before they sold out paleo photo booth fixie next level, subway tile tumeric vaporware fingerstache keytar activated charcoal
+              venmo. Direct trade cardigan bitters flexitarian helvetica. Forage drinking vinegar gastropub cold-pressed hoodie, hell of schlitz four loko vaporware fixie flexitarian mlkshk. Woke biodiesel godard activated charcoal franzen four dollar
+              toast fixie. Chicharrones vexillologist hammock vaporware fixie pinterest, butcher VHS farm-to-table YOLO ramps bespoke. Man bun food truck unicorn typewriter.
+            </p>
+          </div>
+          <!-- /.card -->
         </div>
-        <!-- /.card -->
+        <!-- /.col -->
+        <div class="col-lg-6">
+          <img class="about-img" src="images/about.jpg" alt="question mark" />
+        </div>
+        <!-- /.col-lg-6 -->
       </div>
-      <!-- /.col -->
-      <div class="col-lg-6">
-        <img class="about-img" src="images/about.jpg" alt="question mark" />
-      </div>
-      <!-- /.col-lg-6 -->
+      <!-- /.row -->
     </div>
-    <!-- /.row -->
-  </div>
-  <!-- /.container -->
+    <!-- /.container -->
 
-  <div class="code-img paralax"></div>
+    <div class="code-img paralax"></div>
 
-  <div class="container">
-    <!-- What we do -->
-    <div class="row">
-      <div class="col-lg-6">
-        <img class="working-image" src="images/how-we-help.jpg" alt="people working" />
-      </div>
-      <!-- /.col-lg-6 -->
-      <div class="col">
-        <div class="card my-card shadow-right">
-          <h1>How We Can Help Your Business</h1>
-          <p>
-            Waistcoat la croix banh mi yuccie drinking vinegar ennui gastropub synth typewriter normcore squid man braid letterpress mlkshk. Before they sold out paleo photo booth fixie next level, subway tile tumeric vaporware fingerstache keytar activated charcoal
-            venmo. Direct trade cardigan bitters flexitarian helvetica. Forage drinking vinegar gastropub cold-pressed hoodie, hell of schlitz four loko vaporware fixie flexitarian mlkshk. Woke biodiesel godard activated charcoal franzen four dollar toast
-            fixie. Chicharrones vexillologist hammock vaporware fixie pinterest, butcher VHS farm-to-table YOLO ramps bespoke. Man bun food truck unicorn typewriter.
-          </p>
+    <div class="container">
+      <!-- What we do -->
+      <div class="row">
+        <div class="col-lg-6">
+          <img class="working-image" src="images/how-we-help.jpg" alt="people working" />
         </div>
-        <!-- /.card -->
+        <!-- /.col-lg-6 -->
+        <div class="col">
+          <div class="card my-card shadow-right">
+            <h1>How We Can Help Your Business</h1>
+            <p>
+              Waistcoat la croix banh mi yuccie drinking vinegar ennui gastropub synth typewriter normcore squid man braid letterpress mlkshk. Before they sold out paleo photo booth fixie next level, subway tile tumeric vaporware fingerstache keytar activated charcoal
+              venmo. Direct trade cardigan bitters flexitarian helvetica. Forage drinking vinegar gastropub cold-pressed hoodie, hell of schlitz four loko vaporware fixie flexitarian mlkshk. Woke biodiesel godard activated charcoal franzen four dollar
+              toast fixie. Chicharrones vexillologist hammock vaporware fixie pinterest, butcher VHS farm-to-table YOLO ramps bespoke. Man bun food truck unicorn typewriter.
+            </p>
+          </div>
+          <!-- /.card -->
+        </div>
+        <!-- /.col -->
       </div>
-      <!-- /.col -->
+      <!-- /.row -->
     </div>
-    <!-- /.row -->
-  </div>
-  <!-- /.container -->
+    <!-- /.container -->
 
-  <div class="filler-img paralax"></div>
+    <div class="filler-img paralax"></div>
 
-  <div class="container">
-    <!-- What we do -->
-    <div id="how-we-help" class="row">
-      <div class="col">
-        <div class="card my-card shadow-left">
-          <h1>Our Services</h1>
-          <p>
-            Waistcoat la croix banh mi yuccie drinking vinegar ennui gastropub synth typewriter normcore squid man braid letterpress mlkshk. Before they sold out paleo photo booth fixie next level, subway tile tumeric vaporware fingerstache keytar activated charcoal
-            venmo. Direct trade cardigan bitters flexitarian helvetica. Forage drinking vinegar gastropub cold-pressed hoodie, hell of schlitz four loko vaporware fixie flexitarian mlkshk. Woke biodiesel godard activated charcoal franzen four dollar toast
-            fixie. Chicharrones vexillologist hammock vaporware fixie pinterest, butcher VHS farm-to-table YOLO ramps bespoke. Man bun food truck unicorn typewriter.
-          </p>
+    <div class="container">
+      <!-- What we do -->
+      <div id="how-we-help" class="row">
+        <div class="col">
+          <div class="card my-card shadow-left">
+            <h1>Our Services</h1>
+            <p>
+              Waistcoat la croix banh mi yuccie drinking vinegar ennui gastropub synth typewriter normcore squid man braid letterpress mlkshk. Before they sold out paleo photo booth fixie next level, subway tile tumeric vaporware fingerstache keytar activated charcoal
+              venmo. Direct trade cardigan bitters flexitarian helvetica. Forage drinking vinegar gastropub cold-pressed hoodie, hell of schlitz four loko vaporware fixie flexitarian mlkshk. Woke biodiesel godard activated charcoal franzen four dollar
+              toast fixie. Chicharrones vexillologist hammock vaporware fixie pinterest, butcher VHS farm-to-table YOLO ramps bespoke. Man bun food truck unicorn typewriter.
+            </p>
+          </div>
+          <!-- /.card -->
         </div>
-        <!-- /.card -->
-      </div>
-      <!-- /.col -->
-      <div class="col-lg-6">
-        <div id="accordion" role="tablist">
-          <div class="card">
-            <div class="card-header" role="tab" id="headingOne">
-              <h5 class="mb-0">
+        <!-- /.col -->
+        <div class="col-lg-6">
+          <div id="accordion" role="tablist">
+            <div class="card">
+              <div class="card-header" role="tab" id="headingOne">
+                <h5 class="mb-0">
                 <a class="accordion-links" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                   Graphic Design
                 </a>
               </h5>
-            </div>
+              </div>
 
-            <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
-              <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
-                raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                  on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+                  raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
               </div>
             </div>
-          </div>
-          <div class="card">
-            <div class="card-header" role="tab" id="headingTwo">
-              <h5 class="mb-0">
+            <div class="card">
+              <div class="card-header" role="tab" id="headingTwo">
+                <h5 class="mb-0">
                 <a class="collapsed accordion-links" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                   Web Development
                 </a>
               </h5>
-            </div>
-            <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
-              <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
-                raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+              <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                  on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+                  raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
               </div>
             </div>
-          </div>
-          <div class="card">
-            <div class="card-header" role="tab" id="headingThree">
-              <h5 class="mb-0">
+            <div class="card">
+              <div class="card-header" role="tab" id="headingThree">
+                <h5 class="mb-0">
                 <a class="collapsed accordion-links" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                   Mobile Application Development
                 </a>
               </h5>
-            </div>
-            <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
-              <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
-                raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+              <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                  on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+                  raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <!-- /.col-lg-6 -->
       </div>
-      <!-- /.col-lg-6 -->
+      <!-- /.row -->
     </div>
-    <!-- /.row -->
-  </div>
-  <!-- /.container -->
+    <!-- /.container -->
 
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center portfolio">
-        <h1>Check Out Our Work!</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center portfolio">
+          <h1>Check Out Our Work!</h1>
+        </div>
       </div>
-    </div>
-    <!-- /.row -->
-    <div class="row justify-content-center">
-      <div class="col-8">
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="images/portfolio-1.jpg" alt="First slide">
+      <!-- /.row -->
+      <div class="row justify-content-center">
+        <div class="col-8">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="images/portfolio-1.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/portfolio-2.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/portfolio-3.jpg" alt="Third slide">
+              </div>
             </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="images/portfolio-2.jpg" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="images/portfolio-3.jpg" alt="Third slide">
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
-          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
+          </div>
+          <!-- /.carousel -->
         </div>
-        <!-- /.carousel -->
+        <!-- /.col -->
       </div>
-      <!-- /.col -->
+      <!-- /.row -->
     </div>
-    <!-- /.row -->
-  </div>
-  <!-- /.container -->
+    <!-- /.container -->
 
-  <div class="computer-img">
-    <h2 class="text-content text-center">What our clients have said about us</h2>
-  </div>
-
-  <div class="container">
-    <div class="row reviews">
-      <div class="col">
-        <h3 class="text-center text">Roadrunner Services</h3>
-        <hr/>
-        <p>
-          Fixie microdosing XOXO chicharrones flexitarian succulents pour-over bitters disrupt taiyaki pabst iceland schlitz hella. Everyday carry single-origin coffee affogato hashtag. Bicycle rights hexagon cardigan umami four loko. Kogi flexitarian deep v, DIY
-          drinking vinegar brooklyn pour-over chia blue bottle +1.
-        </p>
-      </div>
-      <div class="col">
-        <h3 class="text-center text">A1 Support</h3>
-        <hr/>
-        <p>
-          Gluten-free quinoa distillery bicycle rights palo santo sartorial try-hard blog helvetica raw denim. Trust fund blue bottle +1 green juice. Biodiesel readymade raclette tote bag ramps, shoreditch fashion axe fixie. Hoodie shaman four loko, cornhole activated
-          charcoal selfies direct trade cliche raw denim pinterest yr DIY photo booth.
-        </p>
-      </div>
-      <div class="col">
-        <h3 class="text-center text">Steadfast</h3>
-        <hr/>
-        <p>
-          Twee four dollar toast farm-to-table distillery. Before they sold out leggings blue bottle retro 8-bit umami succulents wolf ramps iPhone intelligentsia green juice squid viral. Hoodie yuccie tattooed drinking vinegar authentic cardigan swag, food truck
-          snackwave sriracha plaid af air plant. Church-key fixie meditation lo-fi enamel pin.
-        </p>
-      </div>
+    <div class="computer-img">
+      <h2 class="text-content text-center">What our clients have said about us</h2>
     </div>
-    <div class="row" id="contact">
-      <div class="col">
-        <h2 class="text">Ready to take your business to the next level?</h2>
-        <button class="btn btn-warning contact-button" data-toggle="modal" data-target="#contact-modal">Contact Us</button>
 
-        <!-- Modal -->
-        <div class="modal fade" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Contact Form</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <div class="container">
+      <div class="row reviews">
+        <div class="col">
+          <h3 class="text-center text">Roadrunner Services</h3>
+          <hr/>
+          <p>
+            Fixie microdosing XOXO chicharrones flexitarian succulents pour-over bitters disrupt taiyaki pabst iceland schlitz hella. Everyday carry single-origin coffee affogato hashtag. Bicycle rights hexagon cardigan umami four loko. Kogi flexitarian deep v, DIY
+            drinking vinegar brooklyn pour-over chia blue bottle +1.
+          </p>
+        </div>
+        <div class="col">
+          <h3 class="text-center text">A1 Support</h3>
+          <hr/>
+          <p>
+            Gluten-free quinoa distillery bicycle rights palo santo sartorial try-hard blog helvetica raw denim. Trust fund blue bottle +1 green juice. Biodiesel readymade raclette tote bag ramps, shoreditch fashion axe fixie. Hoodie shaman four loko, cornhole activated
+            charcoal selfies direct trade cliche raw denim pinterest yr DIY photo booth.
+          </p>
+        </div>
+        <div class="col">
+          <h3 class="text-center text">Steadfast</h3>
+          <hr/>
+          <p>
+            Twee four dollar toast farm-to-table distillery. Before they sold out leggings blue bottle retro 8-bit umami succulents wolf ramps iPhone intelligentsia green juice squid viral. Hoodie yuccie tattooed drinking vinegar authentic cardigan swag, food truck
+            snackwave sriracha plaid af air plant. Church-key fixie meditation lo-fi enamel pin.
+          </p>
+        </div>
+      </div>
+      <div class="row" id="contact">
+        <div class="col">
+          <h2 class="text">Ready to take your business to the next level?</h2>
+          <button class="btn btn-warning contact-button" data-toggle="modal" data-target="#contact-modal">Contact Us</button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Contact Form</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
-              </div>
-              <div class="modal-body">
-                <form>
-                  <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" aria-describedby="enterName">
-                  </div>
-                  <div class="form-group">
-                    <label for="company">Company</label>
-                    <input type="text" class="form-control" id="company">
-                  </div>
-                  <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" class="form-control" id="email">
-                  </div>
-                  <div class="form-group">
-                    <label for="phone">Phone Number</label>
-                    <input type="text" class="form-control" id="phone" placeholder="(XXX) XXX - XXXX">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleFormControlSelect1">What are your needs?</label>
-                    <select class="form-control" id="needs">
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="name">Name</label>
+                      <input type="text" class="form-control" id="name" aria-describedby="enterName">
+                    </div>
+                    <div class="form-group">
+                      <label for="company">Company</label>
+                      <input type="text" class="form-control" id="company">
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="form-group">
+                      <label for="phone">Phone Number</label>
+                      <input type="text" class="form-control" id="phone" placeholder="(XXX) XXX - XXXX">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlSelect1">What are your needs?</label>
+                      <select class="form-control" id="needs">
                     <option>Graphic Design</option>
                     <option>Web Development</option>
                     <option>Mobile Application Development</option>
                     <option>Multiple</option>
                   </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Message</label>
-                    <textarea class="form-control" id="comments" rows="3" placeholder="2000 Characters max..."></textarea>
-                  </div>
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </form>
-              </div>
-              <div class="modal-footer">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlTextarea1">Message</label>
+                      <textarea class="form-control" id="comments" rows="3" placeholder="2000 Characters max..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col">
-        <div id="map"></div>
+        <div class="col">
+          <div id="map"></div>
+        </div>
       </div>
     </div>
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col copyright">
+            <p>Copyright &copy; 2017</p>
+          </div>
+          <!-- /.col-xs-6 -->
+          <div class="col links">
+            <a href="https://github.com/djackreuter" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+          <!-- /.col-xs-6 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </footer>
+
+
+
   </div>
+  <!-- /.sfooter-content -->
 
 </body>
 
