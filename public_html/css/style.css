@@ -141,6 +141,7 @@ hr {
 }
 
 .contact-button {
+  margin-top: 2rem;
   -webkit-transition: transform 1s, color 1s ease-out, background-color 2s ease-out;
   -moz-transition: transform 1s, color 1s ease-out, background-color 2s ease-out;
   -o-transition: transform 1s, color 1s ease-out, background-color 2s ease-out;
@@ -163,4 +164,10 @@ hr {
 
 .overlay {
   position: absolute;
+}
+
+#map {
+  height: 20rem;
+  box-shadow: 0 0 3rem #111;
+
 }

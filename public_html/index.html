@@ -11,6 +11,8 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9uOLTUZsO2MBjusVzMcnMufTjy83fVa0&callback=initMap">
+  </script>
   <script src="js/script.js"></script>
   <title>Bootstrap Demo</title>
 </head>
@@ -48,25 +50,25 @@
   <div class="video">
   </div>
   <!-- <div class="background"> -->
-    <div class="container">
-      <div class="row justify-content-center" id="home">
-        <video id="video" src="images/laptop.mp4" autoplay loop></video>
-        <div class="col-lg-10 overlay">
-          <div class="card my-card my-card-title">
-            <h1>Welcome To Acme Software</h1>
-            <p>
-              Lorem ipsum dolor amet tbh art party small batch stumptown bitters intelligentsia tumblr, lomo kogi godard keytar fam vegan succulents. Adaptogen kogi blue bottle ramps cray cardigan subway tile forage plaid taiyaki vape viral pok pok seitan cronut. Etsy
-              lo-fi bitters health goth meditation. Retro kombucha brooklyn whatever brunch chartreuse PBR&amp;B cold-pressed wayfarers YOLO. Meh single-origin coffee man bun aesthetic wolf sriracha banjo forage celiac pinterest plaid blog man braid freegan
-              master cleanse. Gluten-free vaporware aesthetic try-hard.
-            </p>
-          </div>
-          <!-- /.card -->
+  <div class="container">
+    <div class="row justify-content-center" id="home">
+      <video id="video" src="images/laptop.mp4" autoplay loop></video>
+      <div class="col-lg-10 overlay">
+        <div class="card my-card my-card-title">
+          <h1>Welcome To Acme Software</h1>
+          <p>
+            Lorem ipsum dolor amet tbh art party small batch stumptown bitters intelligentsia tumblr, lomo kogi godard keytar fam vegan succulents. Adaptogen kogi blue bottle ramps cray cardigan subway tile forage plaid taiyaki vape viral pok pok seitan cronut. Etsy
+            lo-fi bitters health goth meditation. Retro kombucha brooklyn whatever brunch chartreuse PBR&amp;B cold-pressed wayfarers YOLO. Meh single-origin coffee man bun aesthetic wolf sriracha banjo forage celiac pinterest plaid blog man braid freegan
+            master cleanse. Gluten-free vaporware aesthetic try-hard.
+          </p>
         </div>
-        <!-- /.col-lg-10 -->
+        <!-- /.card -->
       </div>
-      <!-- /.row -->
+      <!-- /.col-lg-10 -->
     </div>
-    <!-- /.container -->
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
   </div>
   <!-- /.background -->
 
@@ -268,9 +270,8 @@
     <div class="row" id="contact">
       <div class="col">
         <h2 class="text">Ready to take your business to the next level?</h2>
-      </div>
-      <div class="col">
         <button class="btn btn-warning contact-button" data-toggle="modal" data-target="#contact-modal">Contact Us</button>
+
         <!-- Modal -->
         <div class="modal fade" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
@@ -300,18 +301,18 @@
                     <input type="text" class="form-control" id="phone" placeholder="(XXX) XXX - XXXX">
                   </div>
                   <div class="form-group">
-                  <label for="exampleFormControlSelect1">What are your needs?</label>
-                  <select class="form-control" id="needs">
+                    <label for="exampleFormControlSelect1">What are your needs?</label>
+                    <select class="form-control" id="needs">
                     <option>Graphic Design</option>
                     <option>Web Development</option>
                     <option>Mobile Application Development</option>
                     <option>Multiple</option>
                   </select>
-                </div>
-                <div class="form-group">
-                 <label for="exampleFormControlTextarea1">Message</label>
-                 <textarea class="form-control" id="comments" rows="3" placeholder="2000 Characters max..."></textarea>
-               </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Message</label>
+                    <textarea class="form-control" id="comments" rows="3" placeholder="2000 Characters max..."></textarea>
+                  </div>
                   <button type="submit" class="btn btn-primary">Submit</button>
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </form>
@@ -321,6 +322,9 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="col">
+        <div id="map"></div>
       </div>
     </div>
   </div>
