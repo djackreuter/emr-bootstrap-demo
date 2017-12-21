@@ -15,8 +15,8 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Acme Software</a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
+    <a class="navbar-brand" id="title" href="#">Acme Software</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -44,10 +44,6 @@
         </li>
 
       </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
     </div>
   </nav>
   <div class="background">
@@ -76,7 +72,7 @@
     <!-- About Section -->
     <div id="about" class="row">
       <div class="col">
-        <div class="card my-card">
+        <div class="card my-card shadow-left">
           <h1>About Us</h1>
           <p>
             Waistcoat la croix banh mi yuccie drinking vinegar ennui gastropub synth typewriter normcore squid man braid letterpress mlkshk. Before they sold out paleo photo booth fixie next level, subway tile tumeric vaporware fingerstache keytar activated charcoal
@@ -88,7 +84,7 @@
       </div>
       <!-- /.col -->
       <div class="col-lg-6">
-        <img class="about-img" src="images/about.jpg" alt="question mark" />
+        <img class="about-img img-shadow" src="images/about.jpg" alt="question mark" />
       </div>
       <!-- /.col-lg-6 -->
     </div>
@@ -96,17 +92,17 @@
   </div>
   <!-- /.container -->
 
-  <div class="code-img"></div>
+  <div class="code-img paralax"></div>
 
   <div class="container">
     <!-- What we do -->
     <div class="row">
       <div class="col-lg-6">
-        <img class="working-image" src="images/how-we-help.jpg" alt="people working" />
+        <img class="working-image img-shadow" src="images/how-we-help.jpg" alt="people working" />
       </div>
       <!-- /.col-lg-6 -->
       <div class="col">
-        <div class="card my-card">
+        <div class="card my-card shadow-right">
           <h1>How We Can Help Your Business</h1>
           <p>
             Waistcoat la croix banh mi yuccie drinking vinegar ennui gastropub synth typewriter normcore squid man braid letterpress mlkshk. Before they sold out paleo photo booth fixie next level, subway tile tumeric vaporware fingerstache keytar activated charcoal
@@ -122,13 +118,13 @@
   </div>
   <!-- /.container -->
 
-  <div class="filler-img"></div>
+  <div class="filler-img paralax"></div>
 
   <div class="container">
     <!-- What we do -->
     <div id="how-we-help" class="row">
       <div class="col">
-        <div class="card my-card">
+        <div class="card my-card shadow-left">
           <h1>Our Services</h1>
           <p>
             Waistcoat la croix banh mi yuccie drinking vinegar ennui gastropub synth typewriter normcore squid man braid letterpress mlkshk. Before they sold out paleo photo booth fixie next level, subway tile tumeric vaporware fingerstache keytar activated charcoal
@@ -144,7 +140,7 @@
           <div class="card">
             <div class="card-header" role="tab" id="headingOne">
               <h5 class="mb-0">
-                <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <a class="accordion-links" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                   Graphic Design
                 </a>
               </h5>
@@ -161,7 +157,7 @@
           <div class="card">
             <div class="card-header" role="tab" id="headingTwo">
               <h5 class="mb-0">
-                <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <a class="collapsed accordion-links" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                   Web Development
                 </a>
               </h5>
@@ -177,7 +173,7 @@
           <div class="card">
             <div class="card-header" role="tab" id="headingThree">
               <h5 class="mb-0">
-                <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <a class="collapsed accordion-links" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                   Mobile Application Development
                 </a>
               </h5>
@@ -241,23 +237,23 @@
   </div>
 
   <div class="container">
-    <div class="row">
+    <div class="row reviews">
       <div class="col">
-        <h3>Roadrunner Services</h3>
+        <h3 class="text-center">Roadrunner Services</h3>
         <hr/>
         <p>
           Fixie microdosing XOXO chicharrones flexitarian succulents pour-over bitters disrupt taiyaki pabst iceland schlitz hella. Everyday carry single-origin coffee affogato hashtag. Bicycle rights hexagon cardigan umami four loko. Kogi flexitarian deep v, DIY drinking vinegar brooklyn pour-over chia blue bottle +1.
         </p>
       </div>
       <div class="col">
-        <h3>A1 Support</h3>
+        <h3 class="text-center">A1 Support</h3>
         <hr/>
         <p>
            Gluten-free quinoa distillery bicycle rights palo santo sartorial try-hard blog helvetica raw denim. Trust fund blue bottle +1 green juice. Biodiesel readymade raclette tote bag ramps, shoreditch fashion axe fixie. Hoodie shaman four loko, cornhole activated charcoal selfies direct trade cliche raw denim pinterest yr DIY photo booth.
         </p>
       </div>
       <div class="col">
-        <h3>Steadfast</h3>
+        <h3 class="text-center">Steadfast</h3>
         <hr/>
         <p>
           Twee four dollar toast farm-to-table distillery. Before they sold out leggings blue bottle retro 8-bit umami succulents wolf ramps iPhone intelligentsia green juice squid viral. Hoodie yuccie tattooed drinking vinegar authentic cardigan swag, food truck snackwave sriracha plaid af air plant. Church-key fixie meditation lo-fi enamel pin.

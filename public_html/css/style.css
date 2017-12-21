@@ -16,8 +16,45 @@ body {
   padding: 1rem;
 }
 
+.shadow-right {
+  box-shadow: 1rem 0 2rem #111;
+}
+
+.shadow-left {
+  box-shadow: -1rem 0 2rem #111;
+}
+
+.img-shadow {
+  box-shadow: 0 0 1rem #111;
+}
+
 .my-card > h1, p {
   color: black;
+}
+
+#title {
+  color: goldenrod;
+}
+
+.navbar-dark .navbar-nav > li > a:focus {
+	color: goldenrod;
+}
+
+.navbar-dark .navbar-nav > .active > a,
+.navbar-dark .navbar-nav > .active > a:hover,
+.navbar-dark .navbar-nav > .active > a:focus {
+	color: goldenrod;
+}
+
+.accordion-links {
+  -webkit-transition: color .5s ease-out;
+  -moz-transition: color .5s ease-out;
+  -o-transition: color .5s ease-out;
+  transition: color .5s ease-out;
+}
+
+.accordion-links:hover {
+  color: goldenrod;
 }
 
 .about-img {
@@ -31,7 +68,11 @@ body {
   background: url('../images/code-pic.png') no-repeat center;
   background-attachment: fixed;
   background-size: cover;
-  min-height: 50vh;
+  min-height: 60vh;
+}
+
+.paralax {
+  box-shadow: inset 0 0 6rem #111;
 }
 
 .working-image {
@@ -50,7 +91,7 @@ body {
   background: url('../images/filler-img.jpg') no-repeat center;
   background-attachment: fixed;
   background-size: cover;
-  min-height: 50vh;
+  min-height: 60vh;
 }
 
 .portfolio {
@@ -86,4 +127,12 @@ body {
   font-size: 3.5rem;
   color: black;
   top: 4rem;
+}
+
+hr {
+  background-color: goldenrod;
+}
+
+.reviews {
+  margin-top: 4rem;
 }
