@@ -1,5 +1,6 @@
 body {
   background-color: #2C5D7B;
+  position: relative;
 }
 
 .background {
@@ -14,6 +15,10 @@ body {
   opacity: 0.5;
   margin: 4rem 0;
   padding: 1rem;
+}
+
+.my-card-title {
+  margin: 6rem 0;
 }
 
 .shadow-right {
@@ -36,14 +41,8 @@ body {
   color: goldenrod;
 }
 
-.navbar-dark .navbar-nav > li > a:focus {
-	color: goldenrod;
-}
-
-.navbar-dark .navbar-nav > .active > a,
-.navbar-dark .navbar-nav > .active > a:hover,
-.navbar-dark .navbar-nav > .active > a:focus {
-	color: goldenrod;
+.navbar-dark .navbar-nav .nav-link.active {
+  background-color: goldenrod;
 }
 
 .accordion-links {
