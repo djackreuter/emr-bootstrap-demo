@@ -19,7 +19,7 @@ body {
 }
 
 .my-card-title {
-  margin: 6rem 0;
+  margin: 8rem 0;
 }
 
 .shadow-right {
@@ -152,4 +152,15 @@ hr {
   color: white;
   cursor: pointer;
   transform: rotate(0.03turn);
+}
+
+#video {
+  background-attachment: fixed;
+  background-size: cover;
+  max-width: 100vw;
+  max-height: 720px;
+}
+
+.overlay {
+  position: absolute;
 }
