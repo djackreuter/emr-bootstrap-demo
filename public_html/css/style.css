@@ -175,15 +175,16 @@ hr {
   transform: rotate(0.03turn);
 }
 
-#video {
+/*#video {
   background-attachment: fixed;
   background-size: cover;
   max-width: 100vw;
   max-height: 720px;
-}
+}*/
 
 .overlay {
   position: absolute;
+  top: 5rem;
 }
 
 #map {
@@ -209,4 +210,49 @@ footer {
   font-size: 3rem;
   text-align: right;
   padding: 0 3rem;
+}
+
+/*****************
+Background Video 
+*****************/
+.fullscreen-bg {
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 300%;
+    left: -100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .fullscreen-bg {
+    background: url('../images/splash.png') center center / cover no-repeat;
+  }
+
+  .fullscreen-bg__video {
+    display: none;
+  }
 }
