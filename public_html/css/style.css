@@ -4,6 +4,9 @@
 * http://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
 ***/
 
+/***********
+Body 
+***********/
 /*corrects IE min-height bug*/
 html { display: flex;}
 body { width: 100%;}
@@ -22,198 +25,6 @@ body {
   background-color: #2C5D7B;
   position: relative;
   text-align: justify;
-}
-
-.background {
-  background: url('../images/splash.png') no-repeat center;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 100vh;
-}
-
-.my-card {
-  background-color: lightgray;
-  opacity: 0.5;
-  margin: 4rem 0;
-  padding: 1rem;
-}
-
-.my-card-title {
-  margin: 8rem 0;
-}
-
-.shadow-right {
-  box-shadow: 1rem 0 2rem #111;
-}
-
-.shadow-left {
-  box-shadow: -1rem 0 2rem #111;
-}
-
-.my-card > h1, p {
-  color: black;
-}
-
-#title {
-  color: goldenrod;
-}
-
-.navbar-dark .navbar-nav .nav-link.active {
-  background-color: goldenrod;
-}
-
-.accordion-links {
-  -webkit-transition: color .5s ease-out;
-  -moz-transition: color .5s ease-out;
-  -o-transition: color .5s ease-out;
-  transition: color .5s ease-out;
-}
-
-.accordion-links:hover {
-  color: goldenrod;
-}
-
-.about-img {
-  margin-top: 4rem;
-  margin-left: 3rem;
-  width: 90%;
-  opacity: 0.9;
-  border-radius: 3%;
-  box-shadow: 0 0 1rem #111;
-}
-
-.code-img {
-  background: url('../images/code-pic.png') no-repeat center;
-  background-attachment: fixed;
-  background-size: cover;
-  min-height: 60vh;
-}
-
-.paralax {
-  box-shadow: inset 0 0 6rem #111;
-}
-
-.working-image {
-  margin-top: 4rem;
-  width: 90%;
-  opacity: 0.9;
-  border-radius: 3%;
-  box-shadow: 0 0 1rem #111;
-}
-
-.carousel {
-  width: 46rem;
-  height: 46rem;
-}
-
-.filler-img {
-  background: url('../images/filler-img.jpg') no-repeat center;
-  background-attachment: fixed;
-  background-size: cover;
-  min-height: 60vh;
-}
-
-.portfolio {
-  margin: 4rem 0 2rem 0;
-  color: black;
-}
-
-#accordion {
-  margin-top: 4rem;
-  opacity: 0.9;
-}
-
-.card-header {
-  background-color: lightgray;
-
-}
-
-.card-body {
-  background-color: lightgray;
-  opacity: 0.8;
-  color: black;
-}
-
-.computer-img {
-  background: url('../images/computer.jpg') no-repeat center;
-  background-size: cover;
-  min-height: 50vh;
-  opacity: 0.5;
-}
-
-.text-content {
-  position: relative;
-  font-size: 3.5rem;
-  color: black;
-  top: 4rem;
-}
-
-hr {
-  background-color: goldenrod;
-}
-
-.reviews {
-  margin: 4rem 0;
-}
-
-.text {
-  color: black;
-}
-
-.contact-button {
-  margin-top: 2rem;
-  -webkit-transition: transform 1s, color 1s ease-out, background-color 2s ease-out;
-  -moz-transition: transform 1s, color 1s ease-out, background-color 2s ease-out;
-  -o-transition: transform 1s, color 1s ease-out, background-color 2s ease-out;
-  transition: transform 0.5s, color 1s ease-out, background-color 2s ease-out;
-}
-
-.contact-button:hover {
-  background-color: limegreen;
-  color: white;
-  cursor: pointer;
-  transform: rotate(0.03turn);
-}
-
-/*#video {
-  background-attachment: fixed;
-  background-size: cover;
-  max-width: 100vw;
-  max-height: 720px;
-}*/
-
-.overlay {
-  position: absolute;
-  top: 5rem;
-}
-
-#map {
-  height: 20rem;
-  box-shadow: 0 0 3rem #111;
-  margin-bottom: 4rem;
-}
-
-footer {
-  /* min-height: 2rem; */
-  background-color: #343A40;
-  min-height: 3rem;
-
-}
-
-.copyright p {
-  color: #9A9DA0;
-  padding-top: 1.5rem;
-
-}
-
-.links {
-  font-size: 3rem;
-  text-align: right;
-  padding: 0 3rem;
-}
-
-.github-logo {
-  color: goldenrod;
 }
 
 /*****************
@@ -260,3 +71,202 @@ Background Video
     display: none;
   }
 }
+
+/****************
+Cards
+****************/
+.my-card {
+  background-color: lightgray;
+  opacity: 0.5;
+  margin: 4rem 0;
+  padding: 1rem;
+}
+
+.my-card-title {
+  margin: 8rem 0;
+}
+
+.shadow-right {
+  box-shadow: 1rem 0 2rem #111;
+}
+
+.shadow-left {
+  box-shadow: -1rem 0 2rem #111;
+}
+
+.my-card > h1, p {
+  color: black;
+}
+
+.card-header {
+  background-color: lightgray;
+
+}
+
+.card-body {
+  background-color: lightgray;
+  opacity: 0.8;
+  color: black;
+}
+
+/************
+Navbar
+************/
+#title {
+  color: goldenrod;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+  background-color: goldenrod;
+}
+
+/**************
+Accordion
+**************/
+.accordion-links {
+  -webkit-transition: color .5s ease-out;
+  -moz-transition: color .5s ease-out;
+  -o-transition: color .5s ease-out;
+  transition: color .5s ease-out;
+}
+
+.accordion-links:hover {
+  color: goldenrod;
+}
+
+#accordion {
+  margin-top: 4rem;
+  opacity: 0.9;
+}
+
+/***************
+Images
+***************/
+.about-img {
+  margin: 4rem 0 4rem 3rem;
+  width: 90%;
+  opacity: 0.9;
+  border-radius: 3%;
+  box-shadow: 0 0 1rem #111;
+}
+
+.computer-img {
+  background: url('../images/computer.jpg') no-repeat center;
+  background-size: cover;
+  min-height: 50vh;
+  opacity: 0.5;
+}
+
+.working-image {
+  margin-top: 4rem;
+  width: 90%;
+  opacity: 0.9;
+  border-radius: 3%;
+  box-shadow: 0 0 1rem #111;
+}
+
+.carousel {
+  width: 46rem;
+  height: 46rem;
+}
+
+/*************
+Paralax Images
+**************/
+.paralax {
+  box-shadow: inset 0 0 6rem #111;
+}
+
+.code-img {
+  background: url('../images/code-pic.png') no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 60vh;
+}
+
+.filler-img {
+  background: url('../images/filler-img.jpg') no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 60vh;
+}
+
+/*************
+Text 
+*************/
+.text-content {
+  position: relative;
+  font-size: 3.5rem;
+  color: black;
+  top: 4rem;
+}
+
+hr {
+  background-color: goldenrod;
+}
+
+.reviews {
+  margin: 4rem 0;
+}
+
+.text {
+  color: black;
+}
+
+.portfolio {
+  margin: 4rem 0 2rem 0;
+  color: black;
+}
+
+.overlay {
+  position: absolute;
+  top: 5rem;
+}
+
+/************************
+Footer / Bottom Content
+************************/
+.contact-button {
+  margin-top: 2rem;
+  -webkit-transition: transform 1s, color 1s ease-out, background-color 2s ease-out;
+  -moz-transition: transform 1s, color 1s ease-out, background-color 2s ease-out;
+  -o-transition: transform 1s, color 1s ease-out, background-color 2s ease-out;
+  transition: transform 0.5s, color 1s ease-out, background-color 2s ease-out;
+}
+
+.contact-button:hover {
+  background-color: limegreen;
+  color: white;
+  cursor: pointer;
+  transform: rotate(0.03turn);
+}
+
+#map {
+  height: 20rem;
+  box-shadow: 0 0 3rem #111;
+  margin-bottom: 4rem;
+}
+
+footer {
+  /* min-height: 2rem; */
+  background-color: #343A40;
+  min-height: 3rem;
+
+}
+
+.copyright p {
+  color: #9A9DA0;
+  padding-top: 1.5rem;
+
+}
+
+.links {
+  font-size: 3rem;
+  text-align: right;
+  padding: 0 3rem;
+}
+
+.github-logo {
+  color: goldenrod;
+}
+
